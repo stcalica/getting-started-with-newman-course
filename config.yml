@@ -1,0 +1,16 @@
+title: Getting Started With Newman
+description: How to get started using Postman Newman.
+template:
+  repo: getting-started-with-newman-template
+  name: getting-started-with-newman
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
